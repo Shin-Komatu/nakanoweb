@@ -38,7 +38,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffd700;
+    color: #1e1c0e0e;
 }
 
 section {
@@ -64,6 +64,6 @@ footer {
 }
 
 .contact-link:hover {
-    color: #ffd700;
+    color: #252004;
 }
 
