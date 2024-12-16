@@ -67,7 +67,7 @@ footer {
     font-size: 1.1em;
 }
 #contact {
-    background-image: url('your-image-url.jpg'); /* 画像URLを指定 */
+    background-image: url(''); /* 画像URLを指定 */
     background-size: cover; /* 画像が全体にフィット */
     background-position: center; /* 画像の位置を中央に */
     background-attachment: fixed; /* スクロールしても画像が固定される */
