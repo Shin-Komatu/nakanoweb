@@ -7,7 +7,12 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
+    <div id="news-slider">
+        <div class="news-item">ニュース1: 研究成果が発表されました！</div>
+        <div class="news-item">ニュース2: セミナーのお知らせ</div>
+        <div class="news-item">ニュース3: 新メンバー募集！</div>
+    </div>
+
     <header>
         <div class="logo">
             <h1>仲野研究室</h1>
@@ -27,6 +32,18 @@
         <p>&copy; 2024 仲野研究室</p>
     </footer>
 
-    
+    <script>
+        const slider = document.getElementById('news-slider');
+        const items = slider.getElementsByClassName('news-item');
+        let currentIndex = 0;
+
+        function showNextNews() {
+            items[currentIndex].style.transform = 'translateY(-100%)';
+            currentIndex = (currentIndex + 1) % items.length;
+            items[currentIndex].style.transform = 'translateY(0)';
+        }
+
+        setInterval(showNextNews, 3000);
+    </script>
 </body>
 </html>
