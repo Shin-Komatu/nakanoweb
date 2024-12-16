@@ -32,14 +32,13 @@ section {
 }
 
 header {
-    background-color: #3A4D6C;
+    background-color: #2C3E50;
     color: white;
-    padding: 10px 20px;
     text-align: center;
-    position: fixed;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
     width: 100%;
-    top: 0;
-    z-index: 1000;
 }
 
 nav ul {
