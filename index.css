@@ -39,9 +39,9 @@ nav ul li a {
 nav ul li a:hover {
     color: #3498DB;
 }
-/* *画像の挿入 */
+*画像の挿入
 section {
-    background-image: url('');
+    background-image: url('https://th.bing.com/th/id/OIP.o9tD6liNGjnew6Smb-r2QQHaEK?rs=1&pid=ImgDetMain');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -67,13 +67,13 @@ footer {
     font-size: 1.1em;
 }
 #contact {
-    background-image: url('your-image-url.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-image: url('your-image-url.jpg'); /* 画像URLを指定 */
+    background-size: cover; /* 画像が全体にフィット */
+    background-position: center; /* 画像の位置を中央に */
+    background-attachment: fixed; /* スクロールしても画像が固定される */
     padding: 40px 20px;
     margin-top: 100px;
-    color: white; /* 文字を白に設定 */
+    color: white;
     position: relative;
 }
 
@@ -84,7 +84,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* 透明度を0.5にして背景を暗く */
+    background-color: rgba(0, 0, 0, 0.3); /* 背景に薄い黒のオーバーレイ */
     z-index: 1;
 }
 
@@ -92,4 +92,8 @@ footer {
     position: relative;
     z-index: 2;
 }
+.contact-link:hover {
+    color: #2980B9;
+}
+
 
