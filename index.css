@@ -39,9 +39,9 @@ nav ul li a {
 nav ul li a:hover {
     color: #3498DB;
 }
-
+/* *画像の挿入 */
 section {
-    background-image: url('https://th.bing.com/th/id/OIP.o9tD6liNGjnew6Smb-r2QQHaEK?rs=1&pid=ImgDetMain');
+    background-image: url('');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -67,7 +67,7 @@ footer {
     font-size: 1.1em;
 }
 #contact {
-    background-image: url('your-image-url.jpg'); /* 画像URLを指定 */
+    background-image: url('https://th.bing.com/th/id/OIP.o9tD6liNGjnew6Smb-r2QQHaEK?rs=1&pid=ImgDetMain'); /* 画像URLを指定 */
     background-size: cover; /* 画像が全体にフィット */
     background-position: center; /* 画像の位置を中央に */
     background-attachment: fixed; /* スクロールしても画像が固定される */
