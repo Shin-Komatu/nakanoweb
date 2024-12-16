@@ -5,6 +5,21 @@ body {
     margin: 0;
     padding: 0;
 }
+#news-slider { 
+    width: 300px; /*javaで動きを出す＊/
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+.news-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    transition: transform 1s ease;
+}
 
 header {
     background-color: #3A4D6C;

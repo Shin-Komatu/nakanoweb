@@ -10,6 +10,7 @@
     <title>研究室の情報</title>
     <link rel="stylesheet" href="index.css">
     <style>
+    
         @keyframes move {
             from {left: 0;}
             to {left: 100px;}
@@ -20,6 +21,27 @@
             background-color: red;
             position: relative;
             animation: move 2s infinite alternate;
+        }
+    </style>
+    <style>
+        /* スライダー用CSS */
+        #news-slider {
+            width: 300px;
+            height: 50px;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid #ddd;
+            margin: 20px auto;
+        }
+
+        .news-item {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 50px;
+            background-color: #f0f0f0;
+            transition: transform 1s ease;
         }
     </style>
 </head>
