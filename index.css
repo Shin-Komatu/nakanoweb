@@ -1,32 +1,18 @@
-/* 全体の背景色を設定 */
 body {
-    background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    background-color: #121212;
+    color: #f0f0f0;
+    font-family: 'Courier New', monospace;
 }
 
-/* ヘッダーのスタイル */
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
+header h1 {
+    color: #4f83cc;
 }
 
-/* セクションのスタイル */
-section {
-    padding: 20px;
-    text-align: center;
+a {
+    color: #ff8c00;
+    text-decoration: none;
 }
 
-/* フッターのスタイル */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+a:hover {
+    text-decoration: underline;
 }
