@@ -10,5 +10,13 @@ header {
     text-align: center;
 }
 
-
+footer {
+    background-color: #502c2c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative; /* fixedをrelativeに変更 */
+    bottom: 0;
+    width: 100%; /* 幅を100%に変更 */
+}
 
