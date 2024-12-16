@@ -61,34 +61,7 @@ footer {
     font-weight: bold;
     font-size: 1.1em;
 }
-#contact {
-    background-image: url('your-image-url.jpg'); /* 画像URLを指定 */
-    background-size: cover; /* 画像が全体にフィット */
-    background-position: center; /* 画像の位置を中央に */
-    background-attachment: fixed; /* スクロールしても画像が固定される */
-    padding: 40px 20px;
-    margin-top: 100px;
-    color: white;
-    position: relative;
-}
 
-#contact::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3); /* 背景に薄い黒のオーバーレイ */
-    z-index: 1;
-}
-
-#contact h2, #contact p, .contact-link {
-    position: relative;
-    z-index: 2;
-}
 .contact-link:hover {
     color: #2980B9;
 }
-
-
