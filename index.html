@@ -9,6 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>研究室の情報</title>
     <link rel="stylesheet" href="index.css">
+    <title>ニューススライダー</title>
+    <link rel="stylesheet" href="index.css">
+</head>
     <style>
     
         @keyframes move {
@@ -44,8 +47,20 @@
             transition: transform 1s ease;
         }
     </style>
+    <div id="news-slider">
+        <div class="news-item">ニュース1: 研究成果が発表されました！</div>
+        <div class="news-item">ニュース2: セミナーのお知らせ</div>
+        <div class="news-item">ニュース3: 新メンバー募集！</div>
+    </div>
+    
 </head>
 <body>
+    <div id="news-slider">
+        <div class="news-item">ニュース1: 研究成果が発表されました！</div>
+        <div class="news-item">ニュース2: セミナーのお知らせ</div>
+        <div class="news-item">ニュース3: 新メンバー募集！</div>
+    </div>
+
     <header>
         <div class="logo">
             <div class="box"></div>
@@ -99,6 +114,19 @@
     <footer>
         <p>&copy; 2024 仲野研究室</p>
     </footer>
+    <script>
+        const slider = document.getElementById('news-slider');
+        const items = slider.getElementsByClassName('news-item');
+        let currentIndex = 0;
+
+        function showNextNews() {
+            items[currentIndex].style.transform = 'translateY(-100%)';
+            currentIndex = (currentIndex + 1) % items.length;
+            items[currentIndex].style.transform = 'translateY(0)';
+        }
+
+        setInterval(showNextNews, 3000);
+    </script>
 </body>
 </html>
 

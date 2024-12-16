@@ -5,8 +5,8 @@ body {
     margin: 0;
     padding: 0;
 }
-#news-slider { 
-    width: 300px; /*javaで動きを出す＊/
+#news-slider {
+    width: 300px;
     height: 50px;
     overflow: hidden;
     position: relative;
@@ -18,8 +18,15 @@ body {
     height: 100%;
     text-align: center;
     line-height: 50px;
+    background-color: #f0f0f0;
     transition: transform 1s ease;
+    transform: translateY(100%);
 }
+
+.news-item:first-child {
+    transform: translateY(0);
+}
+
 
 header {
     background-color: #3A4D6C;
