@@ -19,7 +19,7 @@ body {
     text-align: center;
     line-height: 50px;
     background-color: #f0f0f0;
-    transition: transform 1s ease;
+    transition: transform 0.5s ease;
     transform: translateY(100%);
 }
 
@@ -34,7 +34,7 @@ section {
 header {
     background-color: #3A4D6C;
     color: white;
-    padding: 10px;
+    padding: 10px 20px;
     text-align: center;
     position: fixed;
     width: 100%;
