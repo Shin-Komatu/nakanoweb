@@ -5,16 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>研究室の情報</title>
     <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>研究室の情報</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+    
+        @keyframes move {
+            from {left: 0;}
+            to {left: 100px;}
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation: move 2s infinite alternate;
+        }
+    </style>
+    <style>
+        /* スライダー用CSS */
+        #news-slider {
+            width: 300px;
+            height: 50px;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid #ddd;
+            margin: 20px auto;
+        }
+
+        .news-item {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 50px;
+            background-color: #f0f0f0;
+            transition: transform 1s ease;
+        }
+    </style>
 </head>
 <body>
-    <div id="news-slider">
-        <div class="news-item">ニュース1: 研究成果が発表されました！</div>
-        <div class="news-item">ニュース2: セミナーのお知らせ</div>
-        <div class="news-item">ニュース3: 新メンバー募集！</div>
-    </div>
-
     <header>
         <div class="logo">
+            <div class="box"></div>
             <h1>仲野研究室</h1>
         </div>
         <nav>
@@ -28,22 +62,42 @@
         </nav>
     </header>
 
+    <section id="about">
+        <h2>研究室について</h2>
+        <p>私たちの研究室は、最新の技術と理論を活用した多様な研究を行っています。</p>
+    </section>
+
+    <section id="news">
+        <h2>ニュース</h2>
+        <p>最新の研究成果やイベント情報をお届けします。</p>
+    </section>
+
+    <section id="research">
+        <h2>研究</h2>
+        <h3>基礎研究について</h3>
+        <p>当研究室の基礎研究に関する情報です。</p>
+        <h3>研究業績</h3>
+        <p>私たちの成果をご覧ください。</p>
+    </section>
+
+    <section id="lectures">
+        <h2>講義</h2>
+        <ul>
+            <li>量子力学</li>
+            <li>素粒子物理学</li>
+            <li>統計力学演習</li>
+            <li>理工学プロポーザル</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>当研究室への進学や研究室訪問の希望、共同研究や取材のご相談は、下記フォームよりお気軽にお問い合わせください。</p>
+        <a href="mailto:example@example.com" class="contact-link">お問い合わせはこちら</a>
+    </section>
+
     <footer>
         <p>&copy; 2024 仲野研究室</p>
     </footer>
-
-    <script>
-        const slider = document.getElementById('news-slider');
-        const items = slider.getElementsByClassName('news-item');
-        let currentIndex = 0;
-
-        function showNextNews() {
-            items[currentIndex].style.transform = 'translateY(-100%)';
-            currentIndex = (currentIndex + 1) % items.length;
-            items[currentIndex].style.transform = 'translateY(0)';
-        }
-
-        setInterval(showNextNews, 3000);
-    </script>
 </body>
 </html>
