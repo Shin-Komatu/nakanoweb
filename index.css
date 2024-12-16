@@ -67,17 +67,26 @@ footer {
     font-size: 1.1em;
 }
 #contact {
-    background-image: url('https://example.com/image.jpg'); /* 画像URLを確認 */
+    background-image: url('https://th.bing.com/th/id/OIP.o9tD6liNGjnew6Smb-r2QQHaEK?rs=1&pid=ImgDetMain'); /* 画像URLを指定 */
     background-size: cover; /* 画像が全体にフィット */
     background-position: center; /* 画像の位置を中央に */
     background-attachment: fixed; /* スクロールしても画像が固定される */
-    background-color: #f7f7f7; /* 背景色を追加 */
     padding: 40px 20px;
     margin-top: 100px;
     color: white;
     position: relative;
 }
 
+#contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* 背景に薄い黒のオーバーレイ */
+    z-index: 1;
+}
 
 #contact h2, #contact p, .contact-link {
     position: relative;
