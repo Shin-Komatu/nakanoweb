@@ -1,0 +1,32 @@
+/* 全体の背景色を設定 */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ヘッダーのスタイル */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* セクションのスタイル */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* フッターのスタイル */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
