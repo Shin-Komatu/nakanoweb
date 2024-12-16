@@ -1,6 +1,10 @@
+/* General Styles */
 body {
-    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
     color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -8,6 +12,38 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+section {
+    padding: 40px 20px;
+    margin-top: 100px; /* to avoid content overlap with fixed header */
 }
 
 footer {
@@ -15,8 +51,19 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: absolute; /* Changed to absolute for better positioning */
+    position: relative;
     bottom: 0;
     width: 100%;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #502c31;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.contact-link:hover {
+    color: #ffd700;
 }
 
