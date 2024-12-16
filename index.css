@@ -15,8 +15,8 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    width: 50%;
+    position: relative; /* fixedをrelativeに変更 */
     bottom: 0;
+    width: 100%; /* 幅を100%に変更 */
 }
 
