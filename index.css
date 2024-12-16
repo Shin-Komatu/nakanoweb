@@ -41,6 +41,11 @@ nav ul li a:hover {
 }
 
 section {
+    background-image: url('https://th.bing.com/th/id/OIP.o9tD6liNGjnew6Smb-r2QQHaEK?rs=1&pid=ImgDetMain');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
     padding: 40px 20px;
     margin-top: 100px;
 }
