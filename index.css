@@ -5,14 +5,11 @@ body {
     margin: 0;
     padding: 0;
 }
-/* スライダー用CSS */
 #news-slider {
     width: 300px;
     height: 50px;
     overflow: hidden;
     position: relative;
-    border: 1px solid #ddd;
-    margin: 20px auto;
 }
 
 .news-item {
@@ -24,10 +21,6 @@ body {
     background-color: #f0f0f0;
     transition: transform 1s ease;
     transform: translateY(100%);
-}
-
-.news-item:first-child {
-    transform: translateY(0);
 }
 
 .news-item:first-child {
