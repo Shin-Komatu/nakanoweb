@@ -21,7 +21,7 @@ body {
 
 .particle {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.7); /* 少し透明な粒子 */
+    background-color: rgba(255, 255, 255, 0.5); /* 少し透明な粒子 */
     border-radius: 50%;
     animation: waveAnimation 2s infinite ease-in-out;
 }
@@ -38,7 +38,7 @@ body {
 }
 
 header {
-    background-color: #020b10; /* 黒いヘッダー */
+    background-color: #34495e; /* ダークブルーグレーに変更 */
     color: #ffffff; /* 白いテキスト */
     padding: 15px;
     text-align: center;
@@ -48,7 +48,6 @@ header {
     z-index: 1000;
 }
 
-
 nav ul li a {
     text-decoration: none;
     color: #ffffff; /* リンクの色は白 */
@@ -57,19 +56,19 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #f65308; /* ホバー時にオレンジ色に変化 */
+    color: #1abc9c; /* ターコイズブルーに変更 */
 }
 
 section {
     padding: 40px 20px;
     margin-top: 100px; /* 固定ヘッダー分の余白 */
-    background-color: #34495e; /* ダークグレーで落ち着いた背景 */
+    background-color: #2c3e50; /* もう少し明るいグレーに変更 */
     color: #ecf0f1; /* セクションのテキストは明るい色 */
     border-radius: 8px; /* セクションの角を丸める */
 }
 
 footer {
-    background-color: #34495e; /* ダークグレーのフッター */
+    background-color: #2c3e50; /* 少し明るいダークブルーに変更 */
     color: #ecf0f1; /* フッターのテキストは明るい色 */
     text-align: center;
     padding: 10px;
