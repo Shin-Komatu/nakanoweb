@@ -36,7 +36,7 @@ header {
     color: white; /* White text */
     text-align: center;
     padding: 5px 10px; /* Small padding: top-bottom 5px, left-right 10px */
-    position: fixed; /* Fix it to the top */
+    position:  relative;; /* Fix it to the top */
     top: 0; /* Align to the top */
     width: 100%; /* Full width */
     z-index: 100; /* Keep it above other elements */
