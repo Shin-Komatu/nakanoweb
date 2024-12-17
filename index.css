@@ -20,11 +20,19 @@ body {
     line-height: 50px;
     background-color: #f0f0f0;
     transition: transform 0.5s ease;
-    transform: translateY(100%);
+    transform: translateY(100%); /* 最初に下に隠す */
 }
 
 .news-item:first-child {
-    transform: translateY(0);
+    transform: translateY(0); /* 最初の要素だけ表示 */
+}
+
+.news-item::before {
+    content: "高知大学"; /* テキスト追加 */
+    font-size: 20px; /* テキストサイズ */
+    color: #333; /* テキストカラー */
+    display: block; /* テキストをブロック表示 */
+    line-height: 50px; /* 高さ中央揃え */
 }
 section {
     padding: 40px 20px;
