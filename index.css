@@ -1,6 +1,6 @@
 body {
-    background-color: #2b809f; /* ダークですが、あまり暗くない背景 */
-    color: #494242; /* 読みやすさを考慮した明るいグレーのテキスト */
+    background-color: #2c3e50; /* 落ち着いたダークブルーグレー背景 */
+    color: #f0f0f0; /* 明るいグレーのテキストで読みやすさを確保 */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -38,8 +38,8 @@ body {
 }
 
 header {
-    background-color: #f7f8f9; /* しろ */
-    color: #1b1818; /* ヘッダー用の白いテキスト */
+    background-color: #3498db; /* 明るいブルーのヘッダー */
+    color: #ffffff; /* 白いテキスト */
     padding: 15px;
     text-align: center;
     position: fixed;
@@ -56,23 +56,31 @@ nav ul {
     margin: 0;
 }
 
-
-
-nav ul li a:hover {
-    color: #f65308; /* ホバー時にティール色に変化 */
+nav ul li {
+    margin: 0 20px;
 }
 
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* リンクの色は白 */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f65308; /* ホバー時にオレンジ色に変化 */
+}
 
 section {
     padding: 40px 20px;
     margin-top: 100px; /* 固定ヘッダー分の余白 */
-    background-color: #2c3e50; /* セクションの背景はダークブルーグレー */
+    background-color: #34495e; /* ダークグレーで落ち着いた背景 */
     color: #ecf0f1; /* セクションのテキストは明るい色 */
     border-radius: 8px; /* セクションの角を丸める */
 }
 
 footer {
-    background-color: #2c3e50; /* ダークブルーグレーのフッター */
+    background-color: #34495e; /* ダークグレーのフッター */
     color: #ecf0f1; /* フッターのテキストは明るい色 */
     text-align: center;
     padding: 10px;
