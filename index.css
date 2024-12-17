@@ -1,10 +1,42 @@
 body {
+    background-color: #1a1a2e; /* 深い青 */
+    color: white;
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-    color: #333;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
+
+@keyframes waveAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.particle {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    animation: waveAnimation 2s infinite ease-in-out;
+}
+
+.particle-1 {
+    width: 10px;
+    height: 10px;
+    animation-duration: 3s;
+}
+.particle-2 {
+    width: 8px;
+    height: 8px;
+    animation-duration: 2s;
+}
+
 
 header {
     background-color: #ffffff; /* 白背景 */
