@@ -1,43 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>研究室の情報</title>
     <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>研究室の情報</title>
+    <link rel="stylesheet" href="index.css">
     <style>
-        body {
-            background-color: #1a1a2e; /* 深い青 */
-            color: white;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
+    
+        @keyframes move {
+            from {left: 0;}
+            to {left: 100px;}
         }
-
-        @keyframes waveAnimation {
-            0% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
-            100% { transform: translateY(0); }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: rgba(238, 227, 227, 0.864);
+            position: relative;
+            animation: move 2s infinite alternate;
         }
-
-        .particle {
-            position: absolute;
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 50%;
-            animation: waveAnimation 2s infinite ease-in-out;
-        }
-
-        .particle-1 {
-            width: 10px;
-            height: 10px;
-            animation-duration: 3s;
-        }
-
-        .particle-2 {
-            width: 8px;
-            height: 8px;
-            animation-duration: 2s;
-        }
-
+    </style>
+    <style>
+        /* スライダー用CSS */
+       
         #news-slider {
             width: 300px;
             height: 50px;
@@ -58,21 +46,7 @@
         }
     </style>
 </head>
-
 <body>
-    <div class="particle particle-1" style="top: 50px; left: 100px;"></div>
-    <div class="particle particle-2" style="top: 100px; left: 200px;"></div>
-    <div class="particle particle-1" style="top: 150px; left: 300px;"></div>
-    <div class="particle particle-2" style="top: 200px; left: 400px;"></div>
-    <div class="particle particle-1" style="top: 250px; left: 500px;"></div>
-
-    <div id="news-slider">
-        <div class="news-item">高知大学 - 最新ニュース1</div>
-        <div class="news-item">高知大学 - 最新ニュース2</div>
-        <div class="news-item">高知大学 - 最新ニュース3</div>
-    </div>
-</body>
-
     <header>
         <div class="logo">
             <div class="box"></div>
