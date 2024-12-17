@@ -37,7 +37,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #3498DB; /* ホバー時の色 */
+    color: #1b1c1d; /* ホバー時の色 */
 }
 
 #news-slider {
