@@ -48,17 +48,6 @@ header {
     z-index: 1000;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-}
-
-nav ul li {
-    margin: 0 20px;
-}
 
 nav ul li a {
     text-decoration: none;
