@@ -39,7 +39,7 @@ header {
     position: fixed; /* Fix it to the top */
     top: 0; /* Align to the top */
     width: 100%; /* Full width */
-    z-index: 1000; /* Keep it above other elements */
+    z-index: 100; /* Keep it above other elements */
 }
 
 nav ul {
