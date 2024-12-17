@@ -1,6 +1,6 @@
 body {
-    background-color: #f1f1f6be; /* しろ */
-    color: white;
+    background-color: #f4f7fb; /* Soft light blue-gray */
+    color: #333; /* Dark text for readability */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -21,7 +21,7 @@ body {
 
 .particle {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.7); /* Slightly more transparent particles */
     border-radius: 50%;
     animation: waveAnimation 2s infinite ease-in-out;
 }
@@ -37,11 +37,10 @@ body {
     animation-duration: 2s;
 }
 
-
 header {
-    background-color: #ffffff; /* 白背景 */
-    color: #000000; /* 黒文字 */
-    padding: 10px;
+    background-color: #ffffff; /* White background for the header */
+    color: #2c3e50; /* Dark blue-gray text */
+    padding: 15px;
     text-align: center;
     position: fixed;
     width: 100%;
@@ -58,27 +57,28 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #000000; /* ナビゲーションリンクの黒色 */
+    color: #2c3e50; /* Dark blue-gray text */
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #1b1c1d; /* ホバー時の色 */
+    color: #3498db; /* Light blue on hover */
 }
 
 #news-slider {
-    width: 300px;
+    width: 320px;
     height: 50px;
     overflow: hidden;
     position: relative;
     border: 1px solid #ddd;
-    margin: 100px auto 20px;
+    margin: 120px auto 20px;
+    background-color: #ffffff; /* White background for news slider */
 }
 
 .news-item {
@@ -87,24 +87,23 @@ nav ul li a:hover {
     height: 100%;
     text-align: center;
     line-height: 50px;
-    background-color: #f0f0f0;
+    background-color: #ecf0f1; /* Light gray background for news items */
     transition: transform 0.1s ease;
 }
 
 .news-item:first-child {
-    transform: translateY(0); /* 最初の要素表示 */
+    transform: translateY(0); /* Display the first element initially */
 }
 
 section {
     padding: 40px 20px;
-    margin-top: 80px; /* headerの高さ分の余白を追加 */
+    margin-top: 100px; /* Extra space to account for the fixed header */
+    background-color: #ffffff; /* White background for content sections */
+    border-radius: 8px; /* Rounded corners for sections */
 }
 
-
-
-
 footer {
-    background-color: #d0dee0e9;
+    background-color: #95a5a6; /* Soft gray for footer */
     color: white;
     text-align: center;
     padding: 10px;
