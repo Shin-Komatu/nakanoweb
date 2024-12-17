@@ -1,5 +1,5 @@
 body {
-    background-color: #1a1a2e; /* 深い青 */
+    background-color: #515168; /* 深い青 */
     color: white;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -88,7 +88,7 @@ nav ul li a:hover {
     text-align: center;
     line-height: 50px;
     background-color: #f0f0f0;
-    transition: transform 1s ease;
+    transition: transform 0.1s ease;
 }
 
 .news-item:first-child {
