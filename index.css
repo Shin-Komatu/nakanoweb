@@ -5,11 +5,48 @@ body {
     margin: 0;
     padding: 0;
 }
+
+header {
+    background-color: #ffffff; /* 白背景 */
+    color: #000000; /* 黒文字 */
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000; /* ナビゲーションリンクの黒色 */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #3498DB; /* ホバー時の色 */
+}
+
 #news-slider {
     width: 300px;
     height: 50px;
     overflow: hidden;
     position: relative;
+    border: 1px solid #ddd;
+    margin: 100px auto 20px;
 }
 
 .news-item {
@@ -19,65 +56,16 @@ body {
     text-align: center;
     line-height: 50px;
     background-color: #f0f0f0;
-    transition: transform 0.5s ease;
-    transform: translateY(100%); /* 最初に下に隠す */
+    transition: transform 1s ease;
 }
 
 .news-item:first-child {
-    transform: translateY(0); /* 最初の要素だけ表示 */
-}
-
-.news-item::before {
-    content: "高知大学"; /* テキスト追加 */
-    font-size: 20px; /* テキストサイズ */
-    color: #333; /* テキストカラー */
-    display: block; /* テキストをブロック表示 */
-    line-height: 50px; /* 高さ中央揃え */
-}
-section {
-    padding: 40px 20px;
-    margin-top: 120px; /* headerの高さに合わせて調整 */
-}
-
-header {
-    background-color: #ffffff !important; /* 背景を白に設定 */
-    color: #000000 !important; /* 文字色を黒に設定 */
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    margin: 10px 0;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #3498DB;
+    transform: translateY(0); /* 最初の要素表示 */
 }
 
 section {
     padding: 40px 20px;
-    margin-top: 100px;
+    margin-top: 120px; /* header高さに合わせて調整 */
 }
 
 footer {
@@ -88,15 +76,4 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-}
-
-.contact-link {
-    text-decoration: none;
-    color: #3498DB;
-    font-weight: bold;
-    font-size: 1.1em;
-}
-
-.contact-link:hover {
-    color: #2980B9;
 }
