@@ -68,7 +68,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #1abc9c; /* ホバー時にティール色に変化 */
+    color: #f65308; /* ホバー時にティール色に変化 */
 }
 
 #news-slider {
