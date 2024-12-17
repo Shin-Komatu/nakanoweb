@@ -65,8 +65,9 @@ nav ul li a:hover {
 
 section {
     padding: 40px 20px;
-    margin-top: 120px; /* header高さに合わせて調整 */
+    margin-top: 80px; /* headerの高さ分の余白を追加 */
 }
+
 
 footer {
     background-color: #2C3E50;
