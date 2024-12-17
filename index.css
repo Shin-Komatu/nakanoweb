@@ -38,8 +38,8 @@ body {
 }
 
 header {
-    background-color: #3498db; /* より目立つ青色のヘッダー */
-    color: #ffffff; /* ヘッダー用の白いテキスト */
+    background-color: #f7f8f9; /* より目立つ青色のヘッダー */
+    color: #1b1818; /* ヘッダー用の白いテキスト */
     padding: 15px;
     text-align: center;
     position: fixed;
