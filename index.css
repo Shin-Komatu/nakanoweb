@@ -1,6 +1,6 @@
 body {
-    background-color: #1e2325; /* Darker, but not too dark, background */
-    color: #f0f0f0; /* Light gray text for better readability */
+    background-color: #1e2325; /* ダークですが、あまり暗くない背景 */
+    color: #f0f0f0; /* 読みやすさを考慮した明るいグレーのテキスト */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -21,7 +21,7 @@ body {
 
 .particle {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.7); /* Slightly more transparent particles */
+    background-color: rgba(255, 255, 255, 0.7); /* 少し透明な粒子 */
     border-radius: 50%;
     animation: waveAnimation 2s infinite ease-in-out;
 }
@@ -38,8 +38,8 @@ body {
 }
 
 header {
-    background-color: #3498db; /* Bright blue header for better contrast */
-    color: #ffffff; /* White text for the header */
+    background-color: #3498db; /* より目立つ青色のヘッダー */
+    color: #ffffff; /* ヘッダー用の白いテキスト */
     padding: 15px;
     text-align: center;
     position: fixed;
@@ -62,13 +62,13 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #ffffff; /* White links for good contrast */
+    color: #ffffff; /* リンクに良いコントラストを持たせる白い文字 */
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #1abc9c; /* Teal hover effect */
+    color: #1abc9c; /* ホバー時にティール色に変化 */
 }
 
 #news-slider {
@@ -78,7 +78,7 @@ nav ul li a:hover {
     position: relative;
     border: 1px solid #ddd;
     margin: 120px auto 20px;
-    background-color: #ffffff; /* White background for news slider */
+    background-color: #ffffff; /* ニューススライダーの背景は白 */
 }
 
 .news-item {
@@ -87,25 +87,25 @@ nav ul li a:hover {
     height: 100%;
     text-align: center;
     line-height: 50px;
-    background-color: #ecf0f1; /* Light gray background for news items */
+    background-color: #ecf0f1; /* ニュース項目の背景は明るい灰色 */
     transition: transform 0.1s ease;
 }
 
 .news-item:first-child {
-    transform: translateY(0); /* Display the first element initially */
+    transform: translateY(0); /* 最初の要素を初期位置に表示 */
 }
 
 section {
     padding: 40px 20px;
-    margin-top: 100px; /* Extra space to account for the fixed header */
-    background-color: #2c3e50; /* Dark blue-gray background for sections */
-    color: #ecf0f1; /* Light text for the sections */
-    border-radius: 8px; /* Rounded corners for sections */
+    margin-top: 100px; /* 固定ヘッダー分の余白 */
+    background-color: #2c3e50; /* セクションの背景はダークブルーグレー */
+    color: #ecf0f1; /* セクションのテキストは明るい色 */
+    border-radius: 8px; /* セクションの角を丸める */
 }
 
 footer {
-    background-color: #2c3e50; /* Dark blue-gray footer */
-    color: #ecf0f1; /* Light text for the footer */
+    background-color: #2c3e50; /* ダークブルーグレーのフッター */
+    color: #ecf0f1; /* フッターのテキストは明るい色 */
     text-align: center;
     padding: 10px;
     position: relative;
