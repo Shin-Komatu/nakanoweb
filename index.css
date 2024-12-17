@@ -71,28 +71,6 @@ nav ul li a:hover {
     color: #f65308; /* ホバー時にティール色に変化 */
 }
 
-#news-slider {
-    width: 320px;
-    height: 50px;
-    overflow: hidden;
-    position: relative;
-    border: 1px solid #ddd;
-    margin: 120px auto 20px;
-}
-
-.news-item {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    line-height: 50px;
-    background-color: #ecf0f1; /* ニュース項目の背景は明るい灰色 */
-    transition: transform 0.1s ease;
-}
-
-.news-item:first-child {
-    transform: translateY(0); /* 最初の要素を初期位置に表示 */
-}
 
 section {
     padding: 40px 20px;
