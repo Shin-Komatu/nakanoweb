@@ -1,5 +1,5 @@
 body {
-    background-color: #f4f7fb; /* Soft light blue-gray */
+    background-color: #16191c; /* Soft light blue-gray */
     color: #333; /* Dark text for readability */
     font-family: Arial, sans-serif;
     margin: 0;
@@ -103,7 +103,7 @@ section {
 }
 
 footer {
-    background-color: #95a5a6; /* Soft gray for footer */
+    background-color: #171a1a; /* Soft gray for footer */
     color: white;
     text-align: center;
     padding: 10px;
