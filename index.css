@@ -78,7 +78,6 @@ nav ul li a:hover {
     position: relative;
     border: 1px solid #ddd;
     margin: 120px auto 20px;
-    background-color: #1f1919; /* ニューススライダーの背景は白 */
 }
 
 .news-item {
