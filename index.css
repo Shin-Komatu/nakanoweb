@@ -1,3 +1,4 @@
+/* 全体のスタイル */
 body {
     background-color: #ffffff; /* 白背景 */
     color: #333333; /* ダークグレーのテキスト */
@@ -7,6 +8,7 @@ body {
     overflow: hidden;
 }
 
+/* 粒子アニメーション */
 @keyframes waveAnimation {
     0% {
         transform: translateY(0);
@@ -38,6 +40,7 @@ body {
     animation-duration: 2s;
 }
 
+/* ヘッダー */
 header {
     background-color: #ffffff; /* 白いヘッダー */
     color: #333333; /* ダークグレーのテキスト */
@@ -48,6 +51,19 @@ header {
     top: 0;
     z-index: 1000;
     border-bottom: 1px solid #ddd; /* 薄いグレーの下線 */
+}
+
+/* ナビゲーション */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -61,6 +77,7 @@ nav ul li a:hover {
     color: #f39c12; /* ホバー時にオレンジ色 */
 }
 
+/* セクション */
 section {
     padding: 40px 20px;
     margin-top: 100px; /* 固定ヘッダー分の余白 */
@@ -70,6 +87,7 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
 }
 
+/* フッター */
 footer {
     background-color: #ffffff; /* 白いフッター */
     color: #333333; /* ダークグレーのテキスト */
