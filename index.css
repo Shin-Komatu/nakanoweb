@@ -75,7 +75,7 @@ footer {
     color: #333333; /* ダークグレーのテキスト */
     text-align: center;
     padding: 15px;
-    position: relative;
+    position: absolute;
     bottom: 0;
     width: 100%;
     border-top: 1px solid #ddd; /* 薄いグレーの上線 */
