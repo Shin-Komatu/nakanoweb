@@ -24,7 +24,7 @@ body {
 /* 粒子の基本的なスタイル */
 .particle {
     position: absolute;
-    background-color: rgb(234, 234, 227); /* 黄色 */
+    background-color: #ff0; /* 黄色 */
     border-radius: 50%;
     opacity: 0.8;
     pointer-events: none; /* 粒子がクリックされないように */
@@ -91,7 +91,7 @@ section {
     background-color: #f7f7f7; /* 薄いグレーの背景 */
     color: #333333; /* ダークグレーのテキスト */
     border-radius: 8px; /* セクションの角を丸める */
-    box-shadow: 0 4px 8px rgba(230, 224, 224, 0.1); /* 軽い影を追加 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
 }
 
 /* フッター */
@@ -105,3 +105,4 @@ footer {
     width: 100%;
     border-top: 1px solid #ddd; /* 薄いグレーの上線 */
 }
+
