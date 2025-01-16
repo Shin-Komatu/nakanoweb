@@ -21,30 +21,23 @@ body {
     }
 }
 
-/* 粒子の基本的なスタイル */
 .particle {
     position: absolute;
-    background-color: #ff0; /* 黄色 */
+    background-color: rgba(0, 0, 0, 0.2); /* 黒い粒子で、少し透明 */
     border-radius: 50%;
-    opacity: 0.8;
-    pointer-events: none; /* 粒子がクリックされないように */
-    animation: particle-animation 3s forwards; /* アニメーションを3秒間適用 */
+    animation: waveAnimation 2s infinite ease-in-out;
 }
 
-/* アニメーションの定義 */
-@keyframes particle-animation {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    50% {
-        transform: scale(1.5);
-        opacity: 0.5;
-    }
-    100% {
-        transform: scale(0);
-        opacity: 0;
-    }
+.particle-1 {
+    width: 10px;
+    height: 10px;
+    animation-duration: 3s;
+}
+
+.particle-2 {
+    width: 8px;
+    height: 8px;
+    animation-duration: 2s;
 }
 
 /* ヘッダー */
@@ -94,6 +87,34 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
 }
 
+/* 粒子の基本的なスタイル */
+.particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff0; /* 黄色 */
+    border-radius: 50%;
+    opacity: 0.8;
+    pointer-events: none; /* 粒子がクリックされないように */
+    animation: particle-animation 3s forwards; /* アニメーションを3秒間適用 */
+}
+
+/* アニメーションの定義 */
+@keyframes particle-animation {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
 /* フッター */
 footer {
     background-color: #ffffff; /* 白いフッター */
@@ -105,4 +126,3 @@ footer {
     width: 100%;
     border-top: 1px solid #ddd; /* 薄いグレーの上線 */
 }
-
