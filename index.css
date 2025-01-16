@@ -24,7 +24,7 @@ body {
 /* 粒子の基本的なスタイル */
 .particle {
     position: absolute;
-    background-color: rgb(15, 15, 10); /* 黄色 */
+    background-color: rgb(234, 234, 227); /* 黄色 */
     border-radius: 50%;
     opacity: 0.8;
     pointer-events: none; /* 粒子がクリックされないように */
