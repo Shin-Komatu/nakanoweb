@@ -1,107 +1,51 @@
 /* 全体のスタイル */
 body {
-    background-color: #ffffff; /* 白背景 */
-    color: #333333; /* ダークグレーのテキスト */
+    background-color: #000000; /* 黒背景 */
+    color: #ffffff; /* 白いテキスト */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-/* 粒子アニメーション */
-@keyframes waveAnimation {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
 /* 粒子の基本的なスタイル */
 .particle {
     position: absolute;
-    background-color: #ff0; /* 黄色 */
+    background-color: rgba(0, 255, 0, 0.8); /* 緑色の粒子 */
     border-radius: 50%;
-    opacity: 0.8;
+    opacity: 1;
     pointer-events: none; /* 粒子がクリックされないように */
-    animation: particle-animation 3s forwards; /* アニメーションを3秒間適用 */
+    animation: particle-animation 2s infinite ease-in-out; /* アニメーション */
 }
 
 /* アニメーションの定義 */
 @keyframes particle-animation {
     0% {
-        transform: scale(1);
-        opacity: 1;
+        transform: scale(1) translate(0, 0);
+    }
+    25% {
+        transform: scale(1.5) translate(50px, 50px); /* ランダムに動く */
     }
     50% {
-        transform: scale(1.5);
-        opacity: 0.5;
+        transform: scale(1) translate(-50px, -50px);
+    }
+    75% {
+        transform: scale(1.2) translate(100px, 100px);
     }
     100% {
-        transform: scale(0);
-        opacity: 0;
+        transform: scale(1) translate(0, 0);
     }
-}
-
-/* ヘッダー */
-header {
-    background-color: #ffffff; /* 白いヘッダー */
-    color: #333333; /* ダークグレーのテキスト */
-    padding: 15px;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 1px solid #ddd; /* 薄いグレーの下線 */
-}
-
-/* ナビゲーション */
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333333; /* ダークグレーのリンク */
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #f39c12; /* ホバー時にオレンジ色 */
-}
-
-/* セクション */
-section {
-    padding: 40px 20px;
-    margin-top: 100px; /* 固定ヘッダー分の余白 */
-    background-color: #f7f7f7; /* 薄いグレーの背景 */
-    color: #333333; /* ダークグレーのテキスト */
-    border-radius: 8px; /* セクションの角を丸める */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
 }
 
 /* フッター */
 footer {
-    background-color: #ffffff; /* 白いフッター */
-    color: #333333; /* ダークグレーのテキスト */
+    background-color: #222222;
+    color: #ffffff;
     text-align: center;
     padding: 15px;
     position: absolute;
     bottom: 0;
     width: 100%;
-    border-top: 1px solid #ddd; /* 薄いグレーの上線 */
+    border-top: 1px solid #555555;
 }
+
