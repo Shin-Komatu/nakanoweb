@@ -91,7 +91,7 @@ section {
     background-color: #f7f7f7; /* 薄いグレーの背景 */
     color: #333333; /* ダークグレーのテキスト */
     border-radius: 8px; /* セクションの角を丸める */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
+    box-shadow: 0 4px 8px rgba(230, 224, 224, 0.1); /* 軽い影を追加 */
 }
 
 /* フッター */
