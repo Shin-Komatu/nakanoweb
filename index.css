@@ -92,7 +92,7 @@ section {
     position: absolute;
     width: 10px;
     height: 10px;
-    background-color: #ff0; /* 黄色 */
+    background-color: rgb(0, 0, 0); /* 黒 */
     border-radius: 50%;
     opacity: 0.8;
     pointer-events: none; /* 粒子がクリックされないように */
