@@ -2,11 +2,18 @@
 body {
     background-color: #ffffff; /* 白背景 */
     color: #333333; /* ダークグレーのテキスト */
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    font-family: Arial, sans-serif; /* フォント設定 */
+    margin: 0; /* ページの余白を0に */
+    padding: 0; /* ページのパディングを0に */
+    overflow: hidden; /* スクロールバーを隠す */
+
+    /* 背景 */
+    background-image: url('IMG_1695.jpeg'); /* 画像ファイルのパス */
+    background-size: cover; /* 画像を画面全体に広げる */
+    background-position: center; /* 画像を中央に配置 */
+    background-repeat: no-repeat; /* 画像を繰り返さない */
 }
+
 
 /* 粒子アニメーション */
 @keyframes waveAnimation {
