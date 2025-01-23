@@ -10,7 +10,7 @@ body {
     /* 背景 */
     background-image: url('IMG_1695.jpeg'); /* 画像ファイルのパス */
     background-size: cover; /* 画像を画面全体に広げる */
-    background-position: center; /* 画像を中央に配置 */
+    background-position: bottom; /* 画像を中央に配置 */
     background-repeat: no-repeat; /* 画像を繰り返さない */
 }
 
@@ -84,7 +84,7 @@ nav ul li a:hover {
     color: #f39c12; /* ホバー時にオレンジ色 */
 }
 
-/* セクション */
+/* セクション(無くした) */
 section {
     padding: 40px 20px;
     margin-top: 100px; /* 固定ヘッダー分の余白 */
