@@ -84,14 +84,6 @@ nav ul li a:hover {
     color: #f39c12; /* ホバー時にオレンジ色 */
 }
 
-/* セクション(無くした) */
-section {
-    padding: 40px 20px;
-    margin-top: 100px; /* 固定ヘッダー分の余白 */
-    color: #333333; /* ダークグレーのテキスト */
-    border-radius: 8px; /* セクションの角を丸める */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
-}
 
 /* 粒子の基本的なスタイル */
 .particle {
