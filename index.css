@@ -10,7 +10,7 @@ body {
     /* 背景 */
     background-image: url('IMG_1695.jpeg'); /* 画像ファイルのパス */
     background-size: cover; /* 画像を画面全体に広げる */
-    background-position: bottom; /* 画像を中央に配置 */
+    background-position: center; /* 画像を中央に配置 */
     background-repeat: no-repeat; /* 画像を繰り返さない */
 }
 
