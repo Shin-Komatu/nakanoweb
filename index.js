@@ -10,7 +10,7 @@ function createParticle() {
     particle.style.top = `${yPos}px`;
 
     // ランダムに動かす
-    setInterval(() => {
+    const moveInterval = setInterval(() => {
         const xMove = (Math.random() - 0.5) * 200; // -100px から 100px
         const yMove = (Math.random() - 0.5) * 200; // -100px から 100px
         particle.style.transform = `translate(${xMove}px, ${yMove}px)`;
@@ -18,11 +18,10 @@ function createParticle() {
 
     // 一定時間後に削除
     setTimeout(() => {
-        particle.remove();
+        clearInterval(moveInterval); // 動きを停止
+        particle.remove(); // 粒子を削除
     }, 3000); // 3秒後に削除
 }
 
 // 定期的に粒子を生成
 setInterval(createParticle, 200); // 0.2秒ごとに生成
-
-
