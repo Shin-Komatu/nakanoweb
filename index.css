@@ -11,14 +11,15 @@ body {
 header {
     background-color: rgba(255, 255, 255, 0.9);
     color: #333333;
-    padding: 20px 15px; /* 上下20pxの余白 */
+    padding: 20px 15px; /* 上下20px、左右15pxの余白 */
     text-align: center;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
     border-bottom: 1px solid #ddd;
-    height: 80px; /* ヘッダー全体の高さ */
+    height: 60px; /* 明確に高さを指定 */
+    box-sizing: border-box; /* パディングを含む高さを計算 */
 }
 
 /* メインコンテンツ */
@@ -29,8 +30,9 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    padding-top: 80px; /* ヘッダーの高さと一致 */
+    padding-top: 100px; /* headerの高さ + padding分の余白 */
 }
+
 
 
 /* 粒子のスタイル */
